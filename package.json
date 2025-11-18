@@ -1,0 +1,10 @@
+{
+  "name": "code-review",
+  "private": true,
+  "scripts": {
+    "nu:html": "html-validator --file=html/index.html --format=json --verbose > nu-report.json || exit 0"
+  },
+  "devDependencies": {
+    "html-validator-cli": "^7.0.1"
+  }
+}
