@@ -2,9 +2,11 @@
   "name": "code-review",
   "private": true,
   "scripts": {
-    "nu:html": "html-validator --file=html/index.html --format=json --verbose > nu-report.json || exit 0"
+    "nu:html": "html-validator --file=html/index.html --format=json --verbose > nu-report.json || exit 0",
+    "nu:dir": "node scripts/nu-validate-all.js"
   },
   "devDependencies": {
+    "glob": "^13.0.0",
     "html-validator-cli": "^7.0.1"
   }
 }
